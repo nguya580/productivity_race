@@ -12,7 +12,7 @@
     <meta name="author" content="Anh Nguyen">
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="images/f_avatar.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/f_avatar.png" />
 
     <!-- Bootstrap Style linking -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -21,6 +21,11 @@
 
     <!-- Google icon -->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- Jquery linking -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -37,16 +42,40 @@
 
 <body>
 
+    <!-- title welcom -->
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-lg-12 p-3">
+                <h1 class="text-center">Welcome to the Never Ending Productivity Race</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instruction -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 p-3">
-                <h1 class="text-center">Welcome to the Never Ending Productivity Race</h1>
+            <div class="col-lg-6 p-5 text-center">
+                <img src="images/np_mouse_3264472_FEEFCC.png" style="width: 8%; display: inline;" alt="mouse icon">
+                <h4 class="inline">Use mouse to navigate buttons, and select characters.</h4>
+            </div>
+            <div class="col-lg-6 p-5 text-center">
+                <img src="images/np_keyboard_65529_FEEFCC.png" style="width: 9%;" alt="arrow keys icon">
+                <h4 class="inline">Use arrow keys to move around while playing.</h4>
             </div>
         </div>
     </div>
 
     <!-- p5.js sketch goes inside this  div -->
     <div id="sketch_holder"> </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-5 text-center">
+                <p>Hint: don't drink too much coffee.</p>
+            </div>
+
+        </div>
+    </div>
 
     <!-- p5.js Sketch file -->
     <script src="js/sketch.js"></script>
